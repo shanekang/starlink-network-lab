@@ -1,26 +1,26 @@
-# Latency Logger – Telecom Network Baseline Tool
+# Starlink Network Lab
 
-A lightweight Python tool for measuring network latency (RTT) using ICMP ping and logging results to CSV.
+## Overview
+This project analyzes the latency performance of a Starlink LEO satellite connection in Tasmania, Australia.
+
+## Initial Baseline Test
+- Duration: ~30 minutes
+- Interval: 10 seconds
+- Average latency: 41.57 ms
+- Connection type: WiFi (Starlink router)
 
 ## Purpose
+To study:
+- Satellite internet latency behavior
+- Jitter and stability patterns
+- Performance comparison over time
 
-Reliable latency measurement is essential when analysing:
+## Future Improvements
+- 24-hour latency logging
+- Jitter calculation
+- Packet loss tracking
+- WiFi vs Ethernet comparison
+- VPN performance comparison
 
-- ISP performance
-- Backbone behaviour
-- Packet delay and jitter patterns
-- Future satellite vs terrestrial comparisons (Starlink Lab)
-
-This tool establishes baseline RTT metrics that can later be compared across networks.
-
-## Features
-
-- Periodic ping to target host
-- CSV logging with timestamps
-- Success / failure tracking
-- Basic summary statistics (min, avg, max, median)
-
-## Example Usage
-
-```bash
-python latency_logger.py --host 8.8.8.8 --interval 1 --count 60
+---
+Built as part of my telecom and network security lab.
